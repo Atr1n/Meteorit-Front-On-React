@@ -1,0 +1,48 @@
+.work {
+    &-content {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+    }
+    &-item {
+        width: 400px;
+        height: 315px;
+        background: $tempDarkPurple;
+        &:nth-child(1) {
+            background: $white;
+        }
+        &:nth-child(even) {
+            background: $tempPurple;
+        }
+        &__title {
+            width: 60%;
+            h2 {
+                line-height: 1;
+            }
+        }
+        &__img {
+            display: flex;
+            justify-content: flex-end;
+            padding: 2rem 3rem;
+            img {
+                width: 80px;
+            }
+        }
+        &__desc {
+            padding: 0.4rem 2rem;
+            h3 {
+                font-weight: $BoldFont;
+                font-size: $TextMediumSize;
+                text-transform: uppercase;
+                color: $white;
+            }
+            p {
+                padding-top: 0.7rem;
+                font-weight: $BoldFont;
+                font-size: $TextSize;
+                line-height: 1.5;
+                color: $grey;
+            }
+        }
+    }
+}

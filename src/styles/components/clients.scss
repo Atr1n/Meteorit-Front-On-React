@@ -1,0 +1,35 @@
+.clients {
+    position: relative;
+    height: 470px;
+    margin-bottom: 26rem;
+    background: url(../../img/bg4.jpg) center no-repeat;
+    background-size: cover;
+    &-wrapper__desc {
+        display: flex;
+        padding-top: 1.5rem;
+        justify-content: space-between;
+    }
+    &-desc {
+        display: flex;
+        align-items: center;
+        h2 {
+            color: $white;
+        }
+        h3 {
+            color: $white;
+        }
+        p {
+            padding-left: 1rem;
+            text-transform: uppercase;
+            font-weight: $SemiBoldFont;
+            font-size: $TextMediumSize;
+            color: $orange;
+        }
+    }
+    &-content {
+        position: absolute;
+        top: 200px;
+        width: 100%;
+        background: $white;
+    }
+}

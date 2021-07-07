@@ -1,0 +1,107 @@
+.footer {
+    background: #ededed;
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 5rem 0;
+    }
+    &-item {
+        &__links {
+            position: relative;
+            right: 1rem;
+            padding-top: 3rem;
+            a {
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+                img {
+                    width: 30px;
+                }
+            }
+        }
+        &__copy {
+            display: flex;
+            height: 160px;
+            align-items: flex-end;
+            p {
+                font-weight: $SemiBoldFont;
+                font-size: $TextLargeSize;
+                color: $darkGrey;
+            }
+        }
+        &__title {
+            h4 {
+                font-weight: $BoldFont;
+                font-size: $TextSize;
+                text-transform: uppercase;
+            }
+        }
+        &__nav {
+            ul {
+                li {
+                    margin: 1rem 0;
+                    a {
+                        color: $darkGrey;
+                        font-size: $TextLargeSize;
+                    }
+                }
+            }
+        }
+        &__qa {
+            display: flex;
+            padding-bottom: 2rem;
+            align-items: center;
+            &-img {
+                background: $purple;
+                border-radius: 50%;
+                padding: 10px;
+                img {
+                    width: 30px;
+                }
+            }
+            &-text {
+                div {
+                    padding-left: 1rem;
+                    p {
+                        margin-bottom: 0.2rem;
+                        font-weight: $BoldFont;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        color: $black;
+                    }
+                    a {
+                        font-weight: $BoldFont;
+                        font-size: $TitleMediumSize;
+                        text-transform: uppercase;
+                        color: $purple;
+                    }
+                }
+            }
+        }
+        &__text {
+            &-wrapper {
+                display: flex;
+                align-items: flex-start;
+                a {
+                    padding-left: 0.3rem;
+                    color: $purple;
+                    font-weight: $SemiBoldFont;
+                    font-size: $TextLargeSize
+                }
+            }
+            margin-bottom: 2rem;
+            p {
+                margin-bottom: 0.5rem;
+                font-weight: $SemiBoldFont;
+                font-size: $TextLargeSize;
+                color: $darkGrey;
+            }
+            h4 {
+                margin-bottom: 0.5rem;
+                font-weight: $BoldFont;
+                font-size: $TextSize;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+@import 'utils/vars';
+@import 'utils/fonts';
+@import 'utils/reset';
+
+@import 'components/header';
+@import 'components/main';
+@import 'components/quap';
+@import 'components/work';
+@import 'components/certificates';
+@import 'components/equipment';
+@import 'components/shops';
+@import 'components/clients';
+@import 'components/manfac';
+@import 'components/projects';
+@import 'components/footer';
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+html {
+    line-height: $mainLineHeight;
+    font-size: $TextMediumSize;
+    color: $black;
+    height: 100%;
+
+    @media screen and (max-width: $desktopWidth) {
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: $tableWidth) {
+        font-size: 15px;
+    }
+
+    @media screen and (max-width: $phoneWidth) {
+        font-size: 14px;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $mainFont;
+    font-size: $TextMediumSize;
+    font-weight: $RegularFont;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: $black;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    font-weight: $BlackFont;
+    font-size: $MainTitleSize;
+}
+
+a {
+    color: $white;
+    font-weight: $BoldFont;
+    text-decoration: none;
+}
+
+p {
+    color: $black;
+    font-weight: $RegularFont;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-weight: $SemiBoldFont;
+}
+
+section,
+.section {
+    position: relative;
+    padding: 80px 0;
+
+    @media screen and (max-width: $smDesktopWidth) {
+        padding: 36px 0;
+    }
+
+    @media screen and (max-width: $tableWidth) {
+        padding: 28px 0;
+    }
+
+    @media screen and (max-width: $phoneWidth) {
+        padding: 20px 0;
+    }
+}
+
+.container {
+    width: 100%;
+    flex: 0 0 auto;
+    position: relative;
+    margin: 0 auto;
+    max-width: $desktopWidth;
+
+    @media screen and (max-width: $smDesktopWidth) {
+        max-width: $tableWidth;
+    }
+
+    @media screen and (max-width: $tableWidth) {
+        max-width: $phoneWidth;
+    }
+
+    @media screen and (max-width: $phoneWidth) {
+        max-width: $smPhoneWidth;
+    }
+}

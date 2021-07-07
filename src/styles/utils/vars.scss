@@ -1,0 +1,43 @@
+@import 'fonts';
+
+// Font
+$mainFont : 'SegoeUi';
+
+$mainLineHeight: 1.2;
+
+// Font-Color
+$white  : #fff;
+$black  : #000;
+$grey   : #c4c0d9;
+$darkGrey: #767676;
+$yellow : #ffbf26;
+$orange : #f6b828;
+$purple : #5446ae;
+$arrowBg: #e0a023;
+
+
+$tempPurple        : #2f2769;
+$tempDarkPurple   : #483e8a;
+
+// Size
+$MainTitleSize    : 55px;
+$TitleSize        : 36px;
+$TitleMediumSize  : 24px;
+$TextMediumSize   : 18px;
+$TextSize         : 16px;
+$TextLargeSize    : 14px;
+
+// Font-Weight
+$BlackFont        : 900;
+$BoldFont         : 700;
+$SemiBoldFont     : 600;
+$RegularFont      : 400;
+$LightFont        : 300;
+
+// @Media Request
+$desktopWidth     : 1200px;
+$smDesktopWidth   : 1024px;
+$tableWidth       : 768px;
+$smTableWidth     : 640px;
+$phoneWidth       : 480px;
+$smPhoneWidth     : 320px;

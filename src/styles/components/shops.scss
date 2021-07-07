@@ -1,0 +1,42 @@
+.shops {
+    background: #ededed;
+    &-title {
+        width: 70%;
+        h2 {
+            line-height: 1;
+        }
+    }
+    &-content {
+        display: flex;
+        padding-top: 4rem;
+        flex-wrap: wrap;
+    }
+    &-item {
+        width: 285px;
+        height: 285px;
+        display: grid;
+        padding: 1rem 2rem;
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
+        margin-bottom: 1.5rem;
+        background: #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 0.2rem;
+        &__img {
+            padding-top: 0.3rem;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 160px;
+                height: 90px;
+            }
+        }
+        &__text {
+            p {
+                font-size: $TextLargeSize;
+                line-height: 1.5;
+                color: #3d3d3d;
+            }
+        }
+    }
+}

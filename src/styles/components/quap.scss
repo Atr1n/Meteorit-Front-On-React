@@ -1,0 +1,51 @@
+.quap {
+    margin-bottom: 26rem;
+    background: url(../../img/bg2.jpg) center no-repeat;
+    background-size: cover;
+    &-wrapper-desc {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &-desc {
+        h2 {
+            color: $white;
+        }
+        p {
+            width: 72%;
+            padding-top: 3rem;
+            font-size: $TitleMediumSize;
+            font-weight: $SemiBoldFont;
+            line-height: 1.3;
+            color: $orange;
+        }
+    }
+    &-img {
+        img {
+            position: relative;
+            top: -10rem;
+            left: 5rem;
+        }
+    }
+    &-content {
+        position: absolute;
+        top: 360px;
+        width: 100%;
+        height: 715px;
+        padding: 3rem 5rem;
+        border-top: 10px solid $yellow;
+        background: url(../../img/bg3.jpg) no-repeat bottom center;
+        background-size: cover;
+    }
+    &-list {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap: 9rem;
+            li {
+                padding: 1.3rem 0;
+                line-height: 1.3;
+                list-style-image: url(../../img/marker.svg);
+            }
+        }
+    }
+}
