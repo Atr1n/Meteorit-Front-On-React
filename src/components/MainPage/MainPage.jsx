@@ -1,4 +1,4 @@
-import Header from './Header/Header'
+import Header from '../Header/Header'
 import Main from './Main/Main'
 import Equipment from './Equipment/Equipment'
 import QuaPersonnel from './QualifiedPersonnel/QuaPersonnel'
@@ -8,16 +8,18 @@ import Certificates from './Certificates/Certificates'
 import Clients from './Clients/Clients'
 import Work from './ConvenienceOfWork/Work'
 import Manufactures from './Manufacturers/Manufactures'
-import Footer from './Footer/Footer'
+import Footer from '../Footer/Footer'
 
 const MainPage = () => {
   	return (
-		<div>
+		<>
 			<div className="main-background">
-				<Header/>
-				<Main/>
+				<div className="container">
+					<Header/>
+					<Main/>
+				</div>
 			</div>
-			<Equipment/>
+			{ /* <Equipment/> */ }
 			<QuaPersonnel/>
 			<Work/>
 			<Shops/>
@@ -26,8 +28,8 @@ const MainPage = () => {
 			<Manufactures/>
 			<Clients/>
 			<Footer/>
-		</div>
-	);
+		</>
+	)
 }
 
-export default MainPage;
+export default MainPage

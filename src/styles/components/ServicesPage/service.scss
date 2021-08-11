@@ -1,0 +1,65 @@
+.service {
+    &-bg {
+        background: url(../../../img/services/services-bg.jpg) center no-repeat;
+        background-size: cover;
+        button {
+            position: relative;
+            top: -7rem;
+            padding: 1rem 2.5rem;
+            text-transform: uppercase;
+            background: $yellow;
+            border-radius: 5px;
+            font-weight: $BoldFont;
+            font-size: $TextMediumSize;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover {
+                background: $purple;
+                color: $white;
+            }
+        }
+    }
+    &-item {
+        button {
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+            background: $yellow;
+            border-radius: 5px;
+            font-weight: $BoldFont;
+            font-size: $TextMediumSize;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover {
+                background: $purple;
+                color: $white;
+            }
+        }
+        &__title {
+            padding: 0 0 1.5rem 0;
+            &:not(:first-child) {
+                padding: 2rem 0;
+            }
+            h2 {
+                font-size: 30px;
+            }
+        }
+        &__text {
+            p {
+                font-size: $TextSize;
+                line-height: 1.5;
+            }
+        }
+        &__list {
+            ul {
+                padding: 0 0 0 1.5rem;
+                li {
+                    padding: 0.5rem 0 0 0.5rem;
+                    font-size: $TextSize;
+                    font-weight: $RegularFont;
+                    line-height: 1.5;
+                    list-style-image: url(../../../img/marker.svg);
+                }
+            }
+        }
+    }
+}

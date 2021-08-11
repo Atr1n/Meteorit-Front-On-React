@@ -1,0 +1,53 @@
+.main {
+    padding: 100px 0;
+    @media only screen and (max-width: 586px) {
+        padding: 50px 0;
+    }
+    &-background {
+        background: url(../../../img/bg1.jpg) center no-repeat;
+        background-size: cover;
+    }
+    &-title {
+        h1 {
+            width: 40%;
+            line-height: 60px;
+            color: #fff;
+            @media only screen and (max-width: 586px) {
+                width: 100%;
+                line-height: 35px;
+                font-size: 24px;
+            }
+            span {
+                color: $yellow;
+            }
+        }
+    }
+    &-list {
+        width: 68%;
+        padding: 5rem 0 7rem 0;
+        padding-left: 1.5rem;
+        @media only screen and (max-width: 586px) {
+            width: 100%;
+            padding: 2rem 0;
+        }
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            @media only screen and (max-width: 568px) {
+                margin-left: 2rem;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        &__item {
+            li {
+                padding-left: 0.8rem;
+                margin-top: 1rem;
+                color: $white;
+                list-style-image: url(../../../img/marker.svg);
+                @media only screen and (max-width: 586px) {
+                   font-size: 15px;
+                }
+            }
+        }
+    }
+}

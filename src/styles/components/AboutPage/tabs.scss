@@ -1,0 +1,30 @@
+.tabs {
+    position: relative;
+    top: -60px;
+    &-buttons {
+        button {
+           padding: 1.5rem 2.9rem;
+           text-transform: uppercase;
+           background: $orange;
+           font-weight: $BoldFont;
+           font-size: $TextMediumSize;
+           cursor: pointer;
+           transition: all 0.3s;
+        }
+    }
+}
+
+.active-tabs {
+    background: $purple !important;
+    color: $white;
+}
+
+.content {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.active-content {
+    display: block;
+}

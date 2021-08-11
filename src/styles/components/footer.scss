@@ -2,15 +2,25 @@
     background: #ededed;
     &-content {
         display: flex;
+        padding: 5rem 0;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 5rem 0;
+        @media only screen and (max-width: 568px) {
+            display: grid;
+            padding: 2rem 0;
+        }
     }
     &-item {
+        @media only screen and (max-width: 568px) {
+            margin-bottom: 2rem;
+        }
         &__links {
             position: relative;
             right: 1rem;
             padding-top: 3rem;
+            @media only screen and (max-width: 568px) {
+                padding-top: 2rem;
+            }
             a {
                 margin-left: 0.5rem;
                 margin-right: 0.5rem;
@@ -23,6 +33,10 @@
             display: flex;
             height: 160px;
             align-items: flex-end;
+            @media only screen and (max-width: 568px) {
+                position: absolute;
+                bottom: 2rem;
+            }
             p {
                 font-weight: $SemiBoldFont;
                 font-size: $TextLargeSize;

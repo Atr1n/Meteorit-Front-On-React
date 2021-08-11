@@ -1,0 +1,12 @@
+.about {
+    &-bg {
+        background: url(../../../img/about/about-bg.jpg) center no-repeat;
+        background-size: cover;
+    }
+    &-title {
+        padding: 0 0 5rem 0;
+        h1 {
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.certificates {
+    background: $orange;
+    &-content {
+        padding-top: 3rem;
+    }
+    &-item {
+        height: 375px;
+        display: grid !important;
+        grid-gap: 2rem;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        background-color: $white;
+        img {
+            max-width: 100%;
+            object-fit: contain;
+        }
+    }   
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 43px;
+    color: $arrowBg;
+}
+
+.slick-prev {
+    left: -48px;
+}
